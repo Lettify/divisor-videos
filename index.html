@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Divisor de Vídeos Pro - Download</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        :root {
+            --bg: #0f0f0f;
+            --card: #1e1e1e;
+            --accent: #6c5ce7;
+            --text: #ffffff;
+            --text-dim: #b3b3b3;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: var(--bg);
+            color: var(--text);
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 600px;
+            width: 100%;
+            text-align: center;
+        }
+
+        header {
+            margin-top: 50px;
+            margin-bottom: 40px;
+        }
+
+        h1 { font-size: 2.5rem; margin-bottom: 10px; }
+        p { color: var(--text-dim); line-height: 1.6; }
+
+        .download-card {
+            background-color: var(--card);
+            padding: 30px;
+            border-radius: 16px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+            margin-bottom: 30px;
+        }
+
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            background-color: var(--accent);
+            color: white;
+            padding: 15px 30px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: transform 0.2s, background 0.2s;
+            margin: 10px;
+        }
+
+        .btn:hover {
+            transform: translateY(-3px);
+            background-color: #5b4bc4;
+        }
+
+        .btn-secondary {
+            background-color: transparent;
+            border: 2px solid var(--accent);
+        }
+
+        .instructions {
+            text-align: left;
+            background-color: rgba(255, 255, 255, 0.05);
+            padding: 20px;
+            border-radius: 12px;
+            border-left: 4px solid var(--accent);
+        }
+
+        .instructions h3 { margin-top: 0; color: var(--accent); }
+        .step { margin-bottom: 15px; }
+        .step span { font-weight: bold; color: var(--accent); }
+
+        footer {
+            margin-top: auto;
+            padding: 40px 0;
+            font-size: 0.9rem;
+            color: var(--text-dim);
+        }
+
+        .heart { color: #ff4757; animation: heartbeat 1.2s infinite; display: inline-block; }
+        @keyframes heartbeat {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.2); }
+            100% { transform: scale(1); }
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <header>
+        <h1>Divisor de Vídeos Pro</h1>
+        <p>Divida vídeos com precisão cirúrgica usando tecnologia FFmpeg de forma simples e rápida.</p>
+    </header>
+
+    <div class="download-card">
+        <a href="ModernVideoSplitter_x64.appinstaller" class="btn">
+            <i class="fas fa-download"></i> Baixar Instalador (.appinstaller)
+        </a>
+        <p style="font-size: 0.8rem; margin-top: 15px;">
+            Requer o certificado instalado para funcionar.
+        </p>
+    </div>
+
+    <div class="instructions">
+        <h3>🚀 Guia de Primeira Instalação</h3>
+        
+        <div class="step">
+            <span>1.</span> Baixe o certificado aqui: <br>
+            <a href="ModernVideoSplitter_1.0.5.0_x64_Test/ModernVideoSplitter_1.0.5.0_x64.cer" style="color: var(--accent);">Download do Certificado (.cer)</a>
+        </div>
+
+        <div class="step">
+            <span>2.</span> Clique com o botão direito no arquivo <b>.cer</b> > <b>Instalar Certificado</b>.
+        </div>
+
+        <div class="step">
+            <span>3.</span> Escolha <b>Máquina Local</b> e selecione o repositório <b>Autoridades de Certificação Raiz Confiáveis</b>.
+        </div>
+
+        <div class="step">
+            <span>4.</span> Após concluir, execute o botão de <b>Download</b> no topo desta página.
+        </div>
+    </div>
+
+    <footer>
+        Feito com <span class="heart">❤️</span> por Michael Felipe
+    </footer>
+</div>
+
+</body>
+</html>
